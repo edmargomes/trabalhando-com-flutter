@@ -12,7 +12,13 @@ Repositório com dicas para se trabalhar com Flutter
 ```
 sudo apt update && sudo apt install android-sdk
 ```
+Faça o download https://developer.android.com/studio/releases/platform-tools e descompact na pasta `~/Android`
 
+Depois faça os seguintes comandos para colocar a platform tools no path
+```sh
+cd ~/Android
+export PATH="$PATH:`pwd`/platform-tools"
+```
 
 
 ### Rodando o Emulador
