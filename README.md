@@ -8,20 +8,11 @@ Repositório com dicas para se trabalhar com Flutter
 
 ### Pós Instalação do Flutter
 - Rodar o `flutter doctor`
-- Unable to lacte adb:
-```
-sudo apt update && sudo apt install android-sdk
-```
-Faça o download https://developer.android.com/studio/releases/platform-tools e descompact na pasta `~/Android`
-
-Depois faça os seguintes comandos para colocar a platform tools no path
-```sh
-cd ~/Android
-export PATH="$PATH:`pwd`/platform-tools"
-```
 
 
 ### Rodando o Emulador
+
+#### Falha de permissão no kvm
 No Linux mostrava que meu usuário na tinha permissão para executar o kvm.
 Toda vez que reinicia o computador, ele volta a pertencer ao usuário root.
 
@@ -35,4 +26,16 @@ Cheque se o dono do arquivo é o root e o grupo kvm, dessa forma irá passar a f
 
 ```sh
 ls -la /dev/kvm
+```
+
+#### Unable to lacte adb:
+```
+sudo apt update && sudo apt install android-sdk
+```
+Faça o download https://developer.android.com/studio/releases/platform-tools e descompact na pasta `~/Android`
+
+Depois faça os seguintes comandos para colocar a platform tools no path
+```sh
+cd ~/Android
+export PATH="$PATH:`pwd`/platform-tools"
 ```
